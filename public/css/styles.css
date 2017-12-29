@@ -110,7 +110,7 @@ nav {
 }
 
 /*---------------------------------------------- SITEWIDE-MOBILE    ----------------------------------------------  */
-, screen and (max-height: 475px)
+
 @media screen and (max-width:600px), screen and (max-height: 475px) {
   .content {
     margin-top: 80px;
