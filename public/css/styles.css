@@ -174,7 +174,7 @@ nav {
 
 
 .imageWithText * {
-  margin: 3px 0;
+  margin: 1px 0;
 }
 
 @media screen and (min-width:601px), screen and (min-height: 476px) {
