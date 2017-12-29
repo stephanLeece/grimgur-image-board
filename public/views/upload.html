@@ -1,0 +1,17 @@
+<div class="content" ng-controller="formCtrl">
+
+ <form id="imageForm" method="post" ng-submit="submit()">
+     <p class='errMsg'>{{err}}</p>
+   <div class='inputBlock'>
+     <input ng-model="file" type="file" name="file">
+     <input ng-model="user" type="text" name="user"  placeholder="Username" value="">
+     <input ng-model="title" type="text" name="title"  placeholder="Image Title" value="">
+   </div>
+   <textarea ng-model="descrip" type="text" name="descrip" rows="8" cols="80" placeholder="Add a description" value="."></textarea>
+   <textarea ng-model="tags" type="text" name="tags" rows="8" cols="80" placeholder="Tag your Image! (seperate with a comma)" value=""></textarea>
+   <button id="uploadButton" form="imageForm">Upload</button>
+ </form>
+
+ </div>
+
+</div>

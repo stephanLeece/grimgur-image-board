@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Board</title>
+  <base href = '/'>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Special+Elite" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+  <script src="scripts/myApp.js"></script>
+  <script src="scripts/routes.js"></script>
+  <script src="scripts/headerMove.js"></script>
+  <script src="scripts/directives/nav.directive.js"></script>
+</head>
+
+
+
+
+<body>
+
+  <div id="main-container" ng-app="myApp" >
+    <gt-nav-bar></gt-nav-bar>
+  	<div ui-view="main"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <footer>
+    <h2>2017 BadMan Industries</h2>
+  </footer>
+
+
+</body>
+
+</html>

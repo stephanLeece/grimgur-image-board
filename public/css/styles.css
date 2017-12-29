@@ -1,0 +1,453 @@
+
+
+
+/*---------------------------------------------- SITEWIDE-DESKTOP        ----------------------------------------------  */
+
+* {
+  /*font-family: 'Oswald', sans-serif;*/
+  font-family: 'Special Elite', cursive;
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 12px;
+}
+
+button {
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  margin-top: auto;
+  height: 25px;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-family: courier;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer > * {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover * {
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  margin-top: 80px;
+  background-color: rgb(64, 64, 64);
+  border-radius: 5px;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000000;
+}
+
+.navUp {
+  top: -121px;
+}
+
+
+
+
+@media screen and (min-width:601px), screen and (min-height: 476px) {
+  .content {
+    margin-top: 160px;
+  }
+  #navImg1 {
+    width: 400px;
+    margin-left: 20px;
+  }
+  #navImg2 {
+    width: 80px;
+    margin-right: 10px;
+  }
+  nav {
+    height: 120px;
+  }
+}
+
+/*---------------------------------------------- SITEWIDE-MOBILE    ----------------------------------------------  */
+, screen and (max-height: 475px)
+@media screen and (max-width:600px), screen and (max-height: 475px) {
+  .content {
+    margin-top: 80px;
+  }
+  #navImg1 {
+    width: 150px;
+    margin-left: 10px;
+  }
+  #navImg2 {
+    width: 30px;
+    margin-right: 10px;
+  }
+  nav {
+    height: 60px;
+  }
+}
+
+/*---------------------------------------------- HOME/TAGGEDIMAGE-DESKTOP     ----------------------------------------------  */
+
+.allImages {
+  margin-top: 0.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1% 0;
+  width: 95vw;
+}
+
+.imageWithText {
+  background-color: rgb(249, 249, 242);
+  border: 0.5px solid rgb(196, 196, 196);
+  border-radius: 5px;
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4px;
+  width: 39vh;
+  height: 39vh;
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
+}
+
+.imageWithText img {
+  border: 2px solid black;
+  max-width: 95%;
+  max-height: 65%;
+}
+
+.imageWithText p {
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 25px;
+  max-height: 50px;
+  text-overflow: ellipsis;
+  width: 30vh;
+}
+
+
+
+.imageWithText * {
+  margin: 3px 0;
+}
+
+@media screen and (min-width:601px), screen and (min-height: 476px) {
+  .allImages {
+    flex-direction: row;
+  }
+
+  .imageWithText h2 {
+  margin-top: 10px;
+  }
+
+  #morePics {
+    font-size: 2em;
+    padding: 0 5px;
+    margin-bottom: 1%;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+/*---------------------------------------------- HOME/TAGGEDIMAGE-MOBILE       ----------------------------------------------  */
+
+@media screen and (max-width:600px), screen and (max-height: 475px) {
+
+  .imageWithText h2 {
+  margin-top: 5px;
+  }
+
+  .imageWithText {
+    width: 90vw;
+    height: 90vw;
+  }
+  .imageWithText img {
+    max-height: 70vw;
+    width: auto;
+    max-width: 80vw;
+  }
+  .allImages {
+    margin-top: 0.5%;
+    flex-direction: column;
+    padding: 4% 0;
+  }
+  #morePics {
+    font-size: 1.5em;
+    padding: 5px;
+    margin-bottom: 1%;
+    font-family: 'Oswald', sans-serif;
+  }
+}
+
+/*----------------------------------------------    IMAGE-DESKTOP        ----------------------------------------------  */
+
+.bigImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: white;
+}
+
+.bigImage * {
+  margin: 10px 0;
+}
+
+#descrip {
+  margin: 2px 0;
+  font-size: 2em;
+  text-align: center;
+  width: 41vw;
+  padding: 2vw;
+}
+
+.tagBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.tagBar p {
+  font-size: 2em;
+}
+
+.tagBar>* {
+  margin: 0 3px;
+}
+
+.allComments {
+  background-color: white;
+  margin-bottom: 1%;
+}
+
+.allComments * {
+  padding: 10px;
+  overflow-wrap: normal;
+  overflow-wrap: break-word;
+}
+
+#commentDeets {
+  font-size: 1.5em;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+#actualtComment {
+  font-size: 2em;
+}
+
+.commentForm {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.commentForm form {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.commentForm form * {
+  font-size: 1.5em;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+#comment,#moreComments {
+  font-size: 1.25em;
+  padding: 2px 5px;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+
+@media screen and (min-width:601px), screen and (min-height: 476px) {
+  .allComments {
+    width: 45vw;
+  }
+  #imageFullSize {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .commentForm textarea {
+    width: 45vw;
+  }
+  .tagBar {
+    width: 45vw;
+  }
+  #moreComments {
+    margin: 1% 42%;
+    min-width: 16%
+  }
+}
+
+/*----------------------------------------------    IMAGE-MOBILE        ----------------------------------------------  */
+
+@media screen and (max-width:600px), screen and (max-height: 475px) {
+  #imageFullSize {
+    width: 95vw;
+  }
+  .allComments {
+    width: 80vw;
+  }
+  .commentForm textarea {
+    width: 80vw;
+  }
+  .tagBar {
+    width: 80vw;
+  }
+  #descrip {
+    width: 80vw;
+  }
+  #moreComments {
+    margin: 1% 30%;
+    min-width: 40%
+  }
+}
+
+/*----------------------------------------------     UPLOAD-DESKTOP       ----------------------------------------------  */
+
+#imageForm {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 90vw;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#imageForm>* {
+  border: 1px solid black;
+  font-size: 2em;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+}
+
+#imageForm textarea {
+  width: 45vw;
+}
+
+.inputBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45vw;
+}
+
+.inputBlock input[type=file] {
+  background-color: white;
+  width: 23vw;
+  font-size: 1em;
+  padding: 3px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.inputBlock input[type=text] {
+  width: 11vw;
+  font-size: 1em;
+  padding: 2px;
+  font-family: 'Oswald', sans-serif;
+}
+
+#uploadButton {
+  font-size: 2em;
+  padding: 5px;
+  margin-top: 2%;
+}
+
+@media screen and (min-width:601px), screen and (min-height: 476px) {
+  .inputBlock {
+    flex-direction: row;
+  }
+  .errMsg {
+    max-width: 45vw;
+  }
+}
+
+/*----------------------------------------------     UPLOAD-MOBILE       ----------------------------------------------  */
+
+@media screen and (max-width:600px), screen and (max-height: 475px) {
+  #imageForm textarea {
+    width: 80vw;
+    font-size: 25px;
+    text-align: left;
+  }
+  .inputBlock {
+    width: 80vw;
+    flex-direction: column;
+  }
+  .inputBlock input[type=file] {
+    width: 80vw;
+    font-size: 15px;
+  }
+  .inputBlock input[type=text] {
+    width: 80vw;
+    font-size: 30px;
+  }
+  .errMsg {
+    max-width: 80vw;
+  }
+}
+
+/*----------------------------------------------     END      ----------------------------------------------  */

@@ -1,0 +1,14 @@
+<div class="content" ng-init="displayLimit=8" ng-controller="taggedCtrl">
+  <div class="allImages" ng-if="taggedImages.length > 0">
+    <div ng-repeat="image in taggedImages | limitTo: displayLimit">
+      <a ui-sref='image({imageId:image.id})'>
+        <div  class="imageWithText">
+        <h2>{{image.title}}</h2>
+        <img src="{{image.image}}" alt="User submitted image">
+        <h3>Posted By: {{image.username}}</h3>
+        <p>{{image.description}}</p>
+      </div></a>
+    </div>
+
+  </div>
+<button id="morePics" ng-click="showMore()" type="button" name="button">More</button>

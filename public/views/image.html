@@ -1,0 +1,42 @@
+<div class="content" ng-init="displayLimit=5" ng-controller="imageCtrl">
+
+  <div class="bigImage">
+    <h1>{{imageWComment.title}}</h1>
+    <div class="tagBar">
+      <p>Tags: </p>
+      <div  ng-repeat="tag in imageWComment.tags track by $index">
+        <a ui-sref='taggedImage({tag:tag})'><p>{{tag}}</p></a>
+      </div>
+    </div>
+    <img id="imageFullSize" src="{{imageWComment.image}}" alt="User submitted image">
+
+    <h1>Posted By: {{imageWComment.username}}</h1>
+    <p id="descrip">{{imageWComment.description}}</p>
+  </div>
+
+  <div class="allComments">
+    <p>Comments:</p>
+    <div class='comment' ng-repeat="comment in imageWComment.comments | limitTo: displayLimit">
+      <p id='commentDeets'>On {{comment.date}}, {{comment.username}} Posted:</p>
+      <p id="actualtComment">{{comment.comment}}</p>
+    </div>
+    <button id="moreComments" ng-click="showMore()" type="button" name="button">More Comments</button>
+  </div>
+
+
+  <!-- <h1 ng-click="like(true)">like</h1>
+      <h1 ng-click="like(false)">dislike</h1> -->
+      <div class="commentForm">
+
+
+        <form id="commentForm" method="post" ng-submit="submit()">
+            <h3>Post a comment</h3>
+          <input ng-model="username" type="text" name="username" placeholder="Username" value="">
+          <textarea ng-model="comment" type="text" name="comment" rows="6" cols="80" placeholder="Your Comment (Don't be a jerk..)" value=""></textarea>
+          <p>{{err}}</p>
+          <input ng-model="imageid" type="hidden" name="userid" value="{{imageWComment.id}}">
+          <button id="comment" type="submit" form="commentForm">Comment</button>
+        </form>
+      </div>
+
+</div>
