@@ -55,6 +55,10 @@ a:hover * {
   opacity: 0.8;
 }
 
+.tagBar > a:hover * {
+  text-decoration: underline;
+}
+
 .content {
   display: flex;
   flex-direction: column;
