@@ -185,16 +185,14 @@ nav {
   }
 
   .allImages > div {
-      width: 24%;
+  width: 22vw;
+  margin: 2px;
   }
 
   .imageWithText h2 {
   margin-top: 10px;
   }
 
-  .imageWithText {
-  width: 39vh;
-  }
 
 
   #morePics {
