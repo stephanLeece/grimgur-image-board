@@ -152,7 +152,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   margin: 4px;
-  height: 39vh;
+  height: 43vh;
   text-align: center;
   box-shadow: 2px 2px 2px black;
 }
@@ -175,7 +175,7 @@ nav {
 
 
 .imageWithText * {
-  margin: 1px 0;
+  margin: 2px 0;
 }
 
 @media screen and (min-width:601px), screen and (min-height: 476px) {
