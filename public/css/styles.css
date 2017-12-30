@@ -152,7 +152,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   margin: 4px;
-  height: 43vh;
+  height: 39vh;
   text-align: center;
   box-shadow: 2px 2px 2px black;
 }
@@ -160,7 +160,7 @@ nav {
 .imageWithText img {
   border: 2px solid black;
   max-width: 95%;
-  max-height: 75%;
+  max-height: 70%;
 }
 
 .imageWithText p {
@@ -190,6 +190,11 @@ nav {
   .imageWithText h2 {
   margin-top: 10px;
   }
+
+  .imageWithText {
+  width: 39vh;
+  }
+
 
   #morePics {
     font-size: 2em;
