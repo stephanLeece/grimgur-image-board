@@ -133,6 +133,7 @@ nav {
 .allImages {
   margin-top: 0.5%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -184,7 +185,7 @@ nav {
   }
 
   .allImages > div {
-      width: 25%;
+      width: 24%;
   }
 
   .imageWithText h2 {
