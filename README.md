@@ -12,6 +12,8 @@ An image board with user submissons. Implementing Flexbox for responsiveness, an
 ## Preview
 ![desktop](https://github.com/stephanLeece/grimgur-image-board/blob/master/public/grimgurDesktopLanding.png)
 --
+![desktopImage](https://github.com/stephanLeece/grimgur-image-board/blob/master/public/grimgurDesktopImage.png)
+--
 ![mobile](https://github.com/stephanLeece/grimgur-image-board/blob/master/public/grimgurMobile.png)
 
 ## Notes: 
