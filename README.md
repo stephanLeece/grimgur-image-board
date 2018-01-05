@@ -1,5 +1,5 @@
 # Grimgur
-An image board with user submissons. Implementing Flexbox for responsiveness, and Media Queries for mobile/tablet devices.
+An image board with user submissions. Implementing Flexbox for responsiveness, and Media Queries for mobile/tablet devices.
 
 
 ## Technologies
